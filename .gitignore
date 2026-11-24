@@ -1,0 +1,13 @@
+build/
+.build/
+.swiftpm/
+*.xcodeproj/xcuserdata/
+DerivedData/
+.DS_Store
+*.zip
+
+# 暂不公开的文档
+CONTRIBUTING.md
+ROADMAP.md
+PLAN*.md
+plan*.md

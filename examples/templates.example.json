@@ -1,0 +1,49 @@
+{
+  "newSpaceTemplate" : "Edge + Terminal",
+  "spaceNames" : {
+    "4F1C2A7E-0000-0000-0000-000000000000" : "Frontend"
+  },
+  "templates" : [
+    {
+      "name" : "Edge + Terminal",
+      "windows" : [
+        {
+          "appName" : "Microsoft Edge",
+          "bundleID" : "com.microsoft.edgemac",
+          "frame" : { "h" : 0.98, "w" : 0.59, "x" : 0.005, "y" : 0.01 }
+        },
+        {
+          "appName" : "Terminal",
+          "bundleID" : "com.apple.Terminal",
+          "frame" : { "h" : 0.98, "w" : 0.39, "x" : 0.605, "y" : 0.01 }
+        }
+      ]
+    },
+    {
+      "name" : "Frontend",
+      "windows" : [
+        {
+          "appName" : "Visual Studio Code",
+          "bundleID" : "com.microsoft.VSCode",
+          "frame" : { "h" : 1, "w" : 0.5, "x" : 0, "y" : 0 }
+        },
+        {
+          "activeTab" : 1,
+          "appName" : "Google Chrome",
+          "bundleID" : "com.google.Chrome",
+          "frame" : { "h" : 0.6, "w" : 0.5, "x" : 0.5, "y" : 0 },
+          "urls" : [
+            "http://localhost:3000",
+            "https://developer.mozilla.org"
+          ]
+        },
+        {
+          "appName" : "Terminal",
+          "bundleID" : "com.apple.Terminal",
+          "directory" : "/Users/you/code/my-app",
+          "frame" : { "h" : 0.4, "w" : 0.5, "x" : 0.5, "y" : 0.6 }
+        }
+      ]
+    }
+  ]
+}

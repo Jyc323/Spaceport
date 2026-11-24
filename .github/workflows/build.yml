@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build universal app
+        run: bash scripts/build.sh --universal
+      - name: Zip
+        run: ditto -c -k --keepParent build/Spaceport.app Spaceport.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Spaceport
+          path: Spaceport.zip
